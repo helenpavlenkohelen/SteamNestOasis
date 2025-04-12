@@ -1,0 +1,71 @@
+.parallaxSection {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("/images/houses.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	&__content {
+		z-index: 1;
+		color: #393a3b;
+		text-align: center;
+		max-width: 80%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		animation: fadeIn 2s ease-out;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__cloud h3 {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		border-radius: 20px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		margin-bottom: 20px;
+		font-family: "Bona Nova SC", sans-serif;
+		color: #4b4d50;
+		max-width: 600px;
+	}
+	&__box {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		border-radius: 20px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		max-width: 1000px;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	&__box p {
+		font-size: 16px;
+		line-height: 1.5;
+		font-family: "Poppins", sans-serif;
+		text-align: left;
+	}
+	strong {
+		margin-bottom: 10px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

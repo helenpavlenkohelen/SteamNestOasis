@@ -1,0 +1,296 @@
+.wrapper {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(236, 231, 228);
+}
+
+.content {
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	min-height: 400px;
+
+	&__discription {
+		width: 50%;
+		padding: 135px 100px 0 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: rgba(236, 231, 228, 1);
+	}
+	&__logo {
+		font-size: 14px;
+		color: #645c55;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	&__title {
+		color: #1b1a1a;
+		font-size: 50px;
+		font-weight: 300;
+		position: relative;
+		font-family: "Bona Nova SC", sans-serif;
+		margin-bottom: 20px;
+	}
+	&__text {
+		max-width: 500px;
+		font-size: 16px;
+		color: #403e3b;
+		font-family: "Poppins", sans-serif;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	&__foto {
+		width: 50%;
+		height: auto;
+		&_img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.button {
+	&__wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 160px;
+	}
+}
+
+@media (max-width: 1404px) {
+	.content {
+		&__discription {
+			padding-top: 127px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1360px) {
+	.button {
+		&__wrapper {
+			margin-bottom: 150px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 1314px) {
+	.content {
+		&__discription {
+			padding-top: 110px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+	.button {
+		&__wrapper {
+			margin-bottom: 140px;
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	.content {
+		width: 100%;
+		&__discription {
+			padding-top: 80px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+	.button {
+		&__wrapper {
+			margin-bottom: 50px;
+		}
+	}
+}
+@media (max-width: 1195px) {
+	.content {
+		&__discription {
+			padding-top: 50px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+	.button {
+		&__wrapper {
+			margin-bottom: 50px;
+		}
+	}
+}
+@media (max-width: 1190px) {
+	.content {
+		&__discription {
+			padding-top: 50px;
+		}
+		&__title {
+			font-size: 46px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 1178px) {
+	.content {
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 1130px) {
+	.content {
+		&__discription {
+			padding: 50px 75px 0 75px;
+		}
+		&__title {
+			font-size: 42px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.content {
+		&__discription {
+			padding: 30px 50px 0 50px;
+		}
+		&__title {
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+	.button__wrapper {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 1018px) {
+	.content {
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 986px) {
+	.content {
+		&__discription {
+			width: 50%;
+			padding: 49px 46px 0 46px;
+		}
+		&__logo {
+			font-size: 14px;
+			margin-bottom: 20px;
+			padding-left: 50px;
+		}
+		&__title {
+			font-size: 34px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 1.5;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+	.button__wrapper {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		flex-direction: column;
+		&__discription {
+			width: 100%;
+		}
+		&__logo {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		&__title {
+			width: 50%;
+			font-size: 34px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		&__foto {
+			width: 100%;
+			&_img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.button__wrapper {
+		margin-bottom: 70px;
+	}
+}
+@media (max-width: 630px) {
+	.content {
+		&__title {
+			width: 80%;
+		}
+		&__foto {
+			&_img {
+				height: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 430px) {
+	.content {
+		&__discription {
+			padding: 30px 50px 0 50px;
+		}
+		&__title {
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	.button__wrapper {
+		margin-bottom: 50px;
+	}
+}

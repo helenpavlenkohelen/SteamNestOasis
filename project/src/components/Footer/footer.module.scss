@@ -1,0 +1,15 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 50px 0;
+}
+.footer {
+	&__sing {
+		margin-right: 5px;
+	}
+	&__text {
+		margin-left: 5px;
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,202 @@
+input {
+	all: unset;
+	position: relative;
+	padding-bottom: 4px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	all: unset;
+	border-radius: 3px;
+	border: 1px solid gray;
+	margin-bottom: 20px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(236, 231, 228);
+}
+.wrapperForma {
+	max-width: 1440px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 50px 0;
+}
+
+.contact {
+	width: 50%;
+	padding-left: 50px;
+	&__phone,
+	&__email {
+		display: block;
+		color: #3f3939;
+	}
+	&__phone {
+		&Link {
+			text-decoration: none;
+			color: inherit;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: #484647;
+			}
+		}
+	}
+
+	&__email {
+		&Link {
+			text-decoration: none;
+			color: inherit;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: #484647;
+			}
+		}
+	}
+
+	&__title,
+	&__phone {
+		color: #3f3939;
+		margin-bottom: 10px;
+	}
+
+	&__itemSoc {
+		display: flex;
+		width: 100px;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	&__insta div,
+	&__face div {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: #49b323;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		color: rgb(87, 85, 85);
+		font-size: 20px;
+		border: 1px solid transparent;
+		transition: box-shadow 0.3s ease, border 0.3s ease, transform 0.2s ease;
+
+		&:hover {
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+			border: 1px solid #57c239;
+			transform: scale(1.1);
+		}
+	}
+}
+.forma {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
+	&__container-name {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__input {
+		padding: 8px 16px;
+		font-size: 16px;
+		border-radius: 4px;
+		border: solid #ddd 1px;
+		color: #999;
+		display: block;
+		margin: 8px auto;
+		outline-color: #aaa;
+	}
+
+	&__inputGroup,
+	&__containerEmail,
+	&__containerPhone,
+	&__containerText {
+		display: flex;
+		flex-direction: column;
+		color: #3f3939;
+		position: relative;
+		margin-bottom: 5px;
+	}
+
+	&__inputGroup::after,
+	&__containerEmail::after,
+	&__containerPhone::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 80%;
+		height: 1px;
+		background: linear-gradient(90deg, white, gray, gray, white);
+	}
+
+	&__containerText label {
+		margin-bottom: 5px;
+	}
+
+	&__wrapperBtn {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+label {
+	color: #71706f !important;
+	align-self: start !important;
+	font-family: "Bona Nova SC", sans-serif;
+	margin-bottom: 3px;
+}
+@media (max-width: 968px) {
+	input {
+		margin-bottom: 0;
+	}
+	textarea {
+		margin-bottom: 15px;
+	}
+	.wrapperForma {
+		padding: 20px 0 20px 50px;
+	}
+	.contact {
+		padding-left: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+	.wrapperForma {
+		flex-direction: column-reverse;
+		padding: 50px 0 50px 50px;
+	}
+	.forma {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.contact {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-self: start;
+		padding: 0;
+	}
+	label {
+		font-weight: 700 !important;
+	}
+}
+@media (max-width: 740px) {
+	input {
+		margin-bottom: 0;
+	}
+	textarea {
+		margin-bottom: 30px;
+	}
+}

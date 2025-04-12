@@ -1,0 +1,133 @@
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/images/houses.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+label {
+	font-weight: 700;
+	width: 95px;
+}
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	width: 150px;
+	color: #454444;
+	border: solid #ddd 1px;
+	border-radius: 8px;
+	background: #fbfbfb;
+	padding: 16px;
+	box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+		8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+.forma {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	width: 400px;
+	border: solid #ddd 1px;
+	border-radius: 8px;
+	background: #fbfbfb;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+		8px 8px 16px rgba(0, 0, 0, 0.5);
+
+	&__inputGroup {
+		display: flex;
+		flex-direction: row;
+		align-items: center !important;
+		justify-content: center;
+	}
+	&__input {
+		padding: 8px 16px;
+		font-size: 16px;
+		border-radius: 4px;
+		border: solid #ddd 1px;
+		color: #999;
+		display: block;
+		margin: 8px auto;
+		outline-color: #aaa;
+		align-self: center;
+	}
+	&__button,
+	&__goBackButton {
+		display: block;
+		margin: 8px auto;
+		padding: 8px 16px;
+		border-radius: 8px;
+		border: solid #bbb 1px;
+		font-size: 16px;
+		color: #777;
+		background-color: white;
+		transition: all 0.3s ease;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+		&:hover {
+			background-color: #f0f0f0;
+			color: #555;
+			border-color: #888;
+			cursor: pointer;
+			transform: scale(1.05);
+			box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+		}
+	}
+	&__title,
+	label {
+		color: #403e3b;
+		align-self: center;
+		font-family: "Bona Nova SC", sans-serif;
+	}
+	&__hr {
+		border: none;
+		background: linear-gradient(90deg, white, gray, gray, white);
+		height: 1px;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	label {
+		align-self: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.forma {
+		width: 300px;
+		&__input {
+			padding: 4px 8px;
+			font-size: 10px;
+			margin: 2px auto;
+		}
+		&__button {
+			margin: 2px auto;
+			padding: 4px 8px;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+		&__title {
+			font-size: 14px;
+		}
+	}
+	label {
+		width: 95px;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.goBackButton {
+		margin: 2px auto;
+		padding: 4px 8px;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}
