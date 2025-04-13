@@ -6,30 +6,30 @@ _This is a unique project that is a mobile sauna on wheels, offering comfort and
 
 ### Technologies
 
--   Programming language: React, TypeScript\ -
+-   Programming language: React, TypeScript\ 
 
--   Framework: Vite -
+-   Framework: Vite 
 
--   Styles: CSS3, SCSS -
+-   Styles: CSS3, SCSS 
 
--   Development Tools: Git, GitHub, VS Code -
+-   Development Tools: Git, GitHub, VS Code 
 
--   Plugins: React, TypeScript, Vite for optimization and ease of development -
+-   Plugins: React, TypeScript, Vite for optimization and ease of development 
 
 ## Functionality
 
--   Mobility: A sauna on wheels that can be moved to any corner of Canada. -
+-   Mobility: A sauna on wheels that can be moved to any corner of Canada. 
 
--   Relaxation: Built-in functions to maintain temperature, humidity and comfort. -
+-   Relaxation: Built-in functions to maintain temperature, humidity and comfort. 
 
--   Interactive interface: Simple and intuitive interface for booking sessions and managing sauna settings.-
+-   Interactive interface: Simple and intuitive interface for booking sessions and managing sauna settings.
 
 ### Contacts
 
--   Author: Elena Pavlenko -
+-   Author: Elena Pavlenko 
 
--   Email: elenahtc25102013@gmail.com -
+-   Email: elenahtc25102013@gmail.com 
 
--   GitHub: github.com/helenpavlenkohelen -
+-   GitHub: github.com/helenpavlenkohelen 
 
--   LinkedIn: linkedin.com/in/elena-pavlenko-340856234 -
+-   LinkedIn: linkedin.com/in/elena-pavlenko-340856234 
