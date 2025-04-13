@@ -6,7 +6,7 @@ _This is a unique project that is a mobile sauna on wheels, offering comfort and
 
 ### Technologies
 
--   Programming language: React, TypeScript\ 
+-   Programming language: React, TypeScript
 
 -   Framework: Vite 
 
